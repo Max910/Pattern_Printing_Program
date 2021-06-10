@@ -14,7 +14,7 @@ public class ppp {
         System.out.println("\n\nWhich character you want in pattern asterisk symbol(*) or Numbers or alphabets?\nPress 1 for asterisk symbol(*)\nPress 2 Numbers\nPress 3 Alphabets ");
         Character_choice = S.nextInt();
         //if user entered something greater than 3 this while loop will be triggered
-        if (Character_choice > 4) {
+        if (Character_choice > 3) {
             while (t2) {
                 System.out.println("Not a valid option! Please Choose between above option\n then type number number in between 1 to 3   ");
                 Character_choice = S.nextInt();
@@ -121,11 +121,9 @@ public class ppp {
                                                                                       ****
                                                                                      *****     */
                     while (b <= n) {
-                        if (b <= n - 1) {
-                            for (a = b; a <= n; a++)
 
+                            for (a = b; a <= n-1; a++)
                                 System.out.print(" ");
-                        }
 
                         for (a = 1; a <= b; a++)
                             System.out.print("*");
@@ -310,11 +308,8 @@ public class ppp {
                                                                                          1234
                                                                                         12345 */
                     while (b <= n) {
-                        if (b <= n - 1) {
-                            for (a = b; a <= n; a++)
-
+                            for (a = b; a <= n-1; a++)
                                 System.out.print(" ");
-                        }
 
                         for (a = 1; a <= b; a++)
                             System.out.print(a);
@@ -425,13 +420,13 @@ public class ppp {
                 if (c.equals("A")) {
                     System.out.println("\n\nPlease Choose which type of pattern you want among these: ");
                     System.out.println("pattern1\tpattern2");
-                    System.out.println("ABCDF\t\tABCDF\nBCDF\t\t BCDF\nCDF\t\t\t  CDF\nDF\t\t\t   DF\nF\t\t\t\tF");
+                    System.out.println("ABCDE\t\tABCEF\nBCDE\t\t BCDE\nCDE\t\t\t  CEE\nDE\t\t\t   DF\nE\t\t\t\tE");
                     System.out.println("\npattern3\tpattern4");
-                    System.out.println("A\t\t\t\t A\nAB\t\t\t\tAB\nABC\t\t\t   ABC\nABCD\t\t  ABCD\nABCDF\t\t ABCDF");
+                    System.out.println("A\t\t\t\t A\nAB\t\t\t\tAB\nABC\t\t\t   ABC\nABCD\t\t  ABCD\nABCDE\t\t ABCDE");
                     System.out.println("\npattern5");
-                    System.out.println("\tA\n   A B\t\n  A B C\n A B C D\nA B C D F");
+                    System.out.println("\tA\n   A B\t\n  A B C\n A B C D\nA B C D E");
                     System.out.println("\npattern6");
-                    System.out.println("        A  B  C  D  F  A  B  C  D  F\n      A  B  C  D  F  A  B  C  D  F\n    A  B  C  D  F  A  B  C  D  F\n  A  B  C  D  F  A  B  C  D  F\nA  B  C  D  F  A  B  C  D  F\n  A  B  C  D  F  A  B  C  D  F\n    A  B  C  D  F  A  B  C  D  F\n      A  B  C  D  F  A  B  C  D  F\n        A  B  C  D  F  A  B  C  D  F\n          A  B  C  D  F  A  B  C  D  F ");
+                    System.out.println("        A  B  C  D  F  A  B  C  D  E\n      A  B  C  D  F  A  B  C  D  E\n    A  B  C  D  F  A  B  C  D  E\n  A  B  C  D  F  A  B  C  D  E\nA  B  C  D  F  A  B  C  D  E\n  A  B  C  D  F  A  B  C  D  E\n    A  B  C  D  F  A  B  C  D  E\n      A  B  C  D  E  A  B  C  D  E\n       A  B  C  D  E  A  B  C  D  E\n          A  B  C  D  E  A  B  C  D  E ");
                     System.out.println("Please Choose in between 1 to 6 from above: ");
                     Pattern_choice = S.nextInt();
                     if (Pattern_choice > 6) {
@@ -440,32 +435,33 @@ public class ppp {
                             Pattern_choice = S.nextInt();
                             if (Pattern_choice <= 6 && Pattern_choice != 0) {
                                 t1 = false;
+
                             }
                         }
                     }
 
-                    System.out.println("Please Enter How many Rows You Want in pattern: ");
-                    n = S.nextInt();
-                    if (Pattern_choice == 1) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        System.out.println("Please Enter How many Rows You Want in pattern: ");
+                        n = S.nextInt();
+                        if (Pattern_choice == 1) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
                                                                                      /* Number Pattern 1
                                                                                              ABCDE
                                                                                              BCDE
                                                                                              CDE
                                                                                              DE
                                                                                              E  */
-                        while (b <= n) {
+                            while (b <= n) {
 
-                            for (a = b; a <= n; a++)
-                                System.out.print((char) (a + 64));
+                                for (a = b; a <= n; a++)
+                                    System.out.print((char) (a + 64));
 
-                            b++;
-                            System.out.println(" ");
+                                b++;
+                                System.out.println(" ");
+                            }
+
                         }
-
-                    }
-                    if (Pattern_choice == 2) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 2) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                   /* Number Pattern 2
                                                                                           ABCDE
@@ -473,21 +469,21 @@ public class ppp {
                                                                                             CDE
                                                                                              DE
                                                                                               E    */
-                        while (b <= n) {
-                            if (b > 1)
-                                for (a = 2; a <= b; a++)
-                                    System.out.print(" ");
+                            while (b <= n) {
+                                if (b > 1)
+                                    for (a = 2; a <= b; a++)
+                                        System.out.print(" ");
 
-                            for (a = b; a <= n; a++)
-                                System.out.print((char) (a + 64));
+                                for (a = b; a <= n; a++)
+                                    System.out.print((char) (a + 64));
 
-                            b++;
-                            System.out.println(" ");
+                                b++;
+                                System.out.println(" ");
+                            }
                         }
-                    }
 
-                    if (Pattern_choice == 3) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 3) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                        /* pattern 3
                                                                                          A
@@ -495,16 +491,16 @@ public class ppp {
                                                                                          BCD
                                                                                          BCDE
                                                                                          ABCDE */
-                        while (b <= n) {
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 64));
-                            b++;
-                            System.out.println(" ");
-                        }
+                            while (b <= n) {
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 64));
+                                b++;
+                                System.out.println(" ");
+                            }
 
-                    }
-                    if (Pattern_choice == 4) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        }
+                        if (Pattern_choice == 4) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                            /* pattern 4
                                                                                                 A
@@ -512,23 +508,22 @@ public class ppp {
                                                                                               ABC
                                                                                              ABCD
                                                                                             ABCDE*/
-                        while (b <= n) {
-                            if (b <= n - 1) {
-                                for (a = b; a <= n; a++)
+                            while (b <= n) {
 
-                                    System.out.print(" ");
+                                    for (a = b; a <= n-1; a++)
+                                        System.out.print(" ");
+
+
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 64));
+                                b++;
+                                System.out.println(" ");
                             }
-
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 64));
-                            b++;
-                            System.out.println(" ");
                         }
-                    }
 
-                    if (Pattern_choice == 5) {
+                        if (Pattern_choice == 5) {
 
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                    /* pattern 5
                                                                                        A
@@ -536,22 +531,22 @@ public class ppp {
                                                                                      A B C
                                                                                     A B C D
                                                                                    A B C D E  */
-                        while (b <= n) {
-                            if (b <= n-1) {
-                                for (a = b; a <= n-1; a++)
+                            while (b <= n) {
+                                if (b <= n - 1) {
+                                    for (a = b; a <= n - 1; a++)
 
-                                    System.out.print(" ");
+                                        System.out.print(" ");
+                                }
+
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 64) + " ");
+                                b++;
+                                System.out.println(" ");
                             }
 
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 64) + " ");
-                            b++;
-                            System.out.println(" ");
                         }
-
-                    }
-                    if (Pattern_choice == 6) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 6) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                              /*pattern6
                                                                                        1  2  3  4  5  1  2  3  4  5
@@ -565,84 +560,84 @@ public class ppp {
                                                                                        1  2  3  4  5  1  2  3  4  5
                                                                                          1  2  3  4  5  1  2  3  4  5  */
 
-                        while (b <= n) {
-                            if (b <= n - 1) {
-                                for (a = b; a <= n - 1; a++)
+                            while (b <= n) {
+                                if (b <= n - 1) {
+                                    for (a = b; a <= n - 1; a++)
 
-                                    System.out.print("  ");
+                                        System.out.print("  ");
+                                }
+
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 64) + " ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 64) + " ");
+
+                                b++;
+                                System.out.println(" ");
                             }
 
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 64) + " ");
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 64) + " ");
-
-                            b++;
-                            System.out.println(" ");
-                        }
-
-                        b = 1;
-                        while (b <= n) {
+                            b = 1;
+                            while (b <= n) {
                                 for (a = b; a >= 1; a--)
 
                                     System.out.print("  ");
 
 
-
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 64) + " ");
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 64) + " ");
-                            b++;
-                            System.out.println(" ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 64) + " ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 64) + " ");
+                                b++;
+                                System.out.println(" ");
+                            }
+                            System.out.println("\n\n");
                         }
-                        System.out.println("\n\n");
-                    }
+
                 }
-                // if small a
-                if (c.equals("a")) {
-                    System.out.println("\n\nPlease Choose which type of pattern you want among these: ");
-                    System.out.println("pattern1\tpattern2");
-                    System.out.println("abcdf\t\tabcdf\nbcdf\t\t bcdf\ncdf\t\t\t  cdf\ndf\t\t\t   df\nf\t\t\t\tf");
-                    System.out.println("\npattern3\tpattern4");
-                    System.out.println("a\t\t\t\t a\nab\t\t\t\tab\nabc\t\t\t   abc\nabcd\t\t  abcd\nabcdf\t\t abcdf");
-                    System.out.println("\npattern5");
-                    System.out.println("\ta\n   a b\t\n  a b c\n a b c d\na b c d f");
-                    System.out.println("\npattern6");
-                    System.out.println("        a  b  c  d  f  a  b  c  d  f\n      a  b  c  d  f  a  b  c  d  f\n    a  b  c  d  f  a  b  c  d  f\n  a  b  c  d  f  a  b  c  d  f\na  b  c  d  f  a  b  c  d  f\n  a  b  c  d  f  a  b  c  d  f\n    a  b  c  d  f  a  b  c  d  f\n      a  b  c  d  f  a  b  c  d  f\n        a  b  c  d  f  a  b  c  d  f\n          a  b  c  d  f  a  b  c  d  f ");
-                    System.out.println("Please Choose in between 1 to 6 from above: ");
-                    Pattern_choice = S.nextInt();
-                    if (Pattern_choice > 6) {
-                        while (t1) {
-                            System.out.println("Not a valid option! Please Choose between above patterns 1 to 6\n then type number number in between 1 to 6   ");
-                            Pattern_choice = S.nextInt();
-                            if (Pattern_choice <= 6 && Pattern_choice != 0) {
-                                t1 = false;
+                    // if small a
+                    if (c.equals("a")) {
+                        System.out.println("\n\nPlease Choose which type of pattern you want among these: ");
+                        System.out.println("pattern1\tpattern2");
+                        System.out.println("abcde\t\tabcde\nbcde\t\t bcde\ncde\t\t\t  cde\nde\t\t\t   df\ne\t\t\t\te");
+                        System.out.println("\npattern3\tpattern4");
+                        System.out.println("a\t\t\t\t a\nab\t\t\t\tab\nabc\t\t\t   abc\nabcd\t\t  abcd\nabcde\t\t abcde");
+                        System.out.println("\npattern5");
+                        System.out.println("\ta\n   a b\t\n  a b c\n a b c d\na b c d e");
+                        System.out.println("\npattern6");
+                        System.out.println("        a  b  c  d  f  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\na  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n        a  b  c  d  e  a  b  c  d  e\n          a  b  c  d  e  a  b  c  d  e ");
+                        System.out.println("Please Choose in between 1 to 6 from above: ");
+                        Pattern_choice = S.nextInt();
+                        if (Pattern_choice > 6) {
+                            while (t1) {
+                                System.out.println("Not a valid option! Please Choose between above patterns 1 to 6\n then type number number in between 1 to 6   ");
+                                Pattern_choice = S.nextInt();
+                                if (Pattern_choice <= 6 && Pattern_choice != 0) {
+                                    t1 = false;
+                                }
                             }
                         }
-                    }
-                    System.out.println("Please Enter How many Rows You Want in pattern: ");
-                    n = S.nextInt();
-                    if (Pattern_choice == 1) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        System.out.println("Please Enter How many Rows You Want in pattern: ");
+                        n = S.nextInt();
+                        if (Pattern_choice == 1) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
                                                                                      /* Number Pattern 1
                                                                                              ABCDF
                                                                                              BCDF
                                                                                              CDF
                                                                                              DF
                                                                                              F   */
-                        while (b <= n) {
+                            while (b <= n) {
 
-                            for (a = b; a <= n; a++)
-                                System.out.print((char) (a + 96));
+                                for (a = b; a <= n; a++)
+                                    System.out.print((char) (a + 96));
 
-                            b++;
-                            System.out.println(" ");
+                                b++;
+                                System.out.println(" ");
+                            }
+
                         }
-
-                    }
-                    if (Pattern_choice == 2) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 2) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                   /* Number Pattern 2
                                                                                           abcde
@@ -650,21 +645,21 @@ public class ppp {
                                                                                             cde
                                                                                              de
                                                                                               e    */
-                        while (b <= n) {
-                            if (b > 1)
-                                for (a = 2; a <= b; a++)
-                                    System.out.print(" ");
+                            while (b <= n) {
+                                if (b > 1)
+                                    for (a = 2; a <= b; a++)
+                                        System.out.print(" ");
 
-                            for (a = b; a <= n; a++)
-                                System.out.print((char) (a + 96));
+                                for (a = b; a <= n; a++)
+                                    System.out.print((char) (a + 96));
 
-                            b++;
-                            System.out.println(" ");
+                                b++;
+                                System.out.println(" ");
+                            }
                         }
-                    }
 
-                    if (Pattern_choice == 3) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 3) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                        /* pattern 3
                                                                                          a
@@ -672,16 +667,16 @@ public class ppp {
                                                                                          abc
                                                                                          abcd
                                                                                          abcde */
-                        while (b <= n) {
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 96));
-                            b++;
-                            System.out.println(" ");
-                        }
+                            while (b <= n) {
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 96));
+                                b++;
+                                System.out.println(" ");
+                            }
 
-                    }
-                    if (Pattern_choice == 4) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        }
+                        if (Pattern_choice == 4) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                         /* pattern 4
                                                                                               a
@@ -689,23 +684,22 @@ public class ppp {
                                                                                             abc
                                                                                            abcd
                                                                                           abcde     */
-                        while (b <= n) {
-                            if (b <= n - 1) {
-                                for (a = b; a <= n; a++)
+                            while (b <= n) {
 
-                                    System.out.print(" ");
+                                    for (a = b; a <= n-1; a++)
+                                        System.out.print(" ");
+
+
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 96));
+                                b++;
+                                System.out.println(" ");
                             }
-
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 96));
-                            b++;
-                            System.out.println(" ");
                         }
-                    }
 
-                    if (Pattern_choice == 5) {
+                        if (Pattern_choice == 5) {
 
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + " number of rows.\n");
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + " number of rows.\n");
 
                                                                                    /* pattern 5
                                                                                        a
@@ -713,22 +707,22 @@ public class ppp {
                                                                                      a b c
                                                                                     a b c d
                                                                                    a b c d e  */
-                        while (b <= n) {
-                            if (b <= n-1) {
-                                for (a = b; a <= n-1; a++)
+                            while (b <= n) {
+                                if (b <= n - 1) {
+                                    for (a = b; a <= n - 1; a++)
 
-                                    System.out.print(" ");
+                                        System.out.print(" ");
+                                }
+
+                                for (a = 1; a <= b; a++)
+                                    System.out.print((char) (a + 96) + " ");
+                                b++;
+                                System.out.println(" ");
                             }
 
-                            for (a = 1; a <= b; a++)
-                                System.out.print((char) (a + 96) + " ");
-                            b++;
-                            System.out.println(" ");
                         }
-
-                    }
-                    if (Pattern_choice == 6) {
-                        System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
+                        if (Pattern_choice == 6) {
+                            System.out.println("you selected Pattern Type " + Pattern_choice + "\nand " + n + "number of rows.\n");
 
                                                                                              /*pattern6
                                                                                        a   b  c  d  f  a   b  c  d  f
@@ -742,47 +736,48 @@ public class ppp {
                                                                                        a   b  c  d  f  a   b  c  d  f
                                                                                          a   b  c  d  f  a   b  c  d  f  */
 
-                        while (b <= n) {
-                            if (b <= n - 1) {
-                                for (a = b; a <= n - 1; a++)
+                            while (b <= n) {
+                                if (b <= n - 1) {
+                                    for (a = b; a <= n - 1; a++)
 
-                                    System.out.print("  ");
+                                        System.out.print("  ");
+                                }
+
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 96) + " ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 96) + " ");
+
+                                b++;
+                                System.out.println(" ");
                             }
 
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 96) + " ");
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 96) + " ");
-
-                            b++;
-                            System.out.println(" ");
-                        }
-
-                        b = 1;
-                        while (b <= n) {
+                            b = 1;
+                            while (b <= n) {
 
                                 for (a = b; a >= 1; a--)
                                     System.out.print("  ");
 
 
-
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 96) + " ");
-                            for (a = 1; a <= n; a++)
-                                System.out.print((char) (a + 96) + " ");
-                            b++;
-                            System.out.println(" ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 96) + " ");
+                                for (a = 1; a <= n; a++)
+                                    System.out.print((char) (a + 96) + " ");
+                                b++;
+                                System.out.println(" ");
+                            }
+                            System.out.println("\n\n");
                         }
-                        System.out.println("\n\n");
                     }
-                }
+
             }
 
     }
 }
 
 
-// -_-Phew! The End of code
+// -_-Phew! End of the code
 
 
 
+//https://replit.com/@Max122/PatternPrintingProgram?embed=|&output=|#Main.java
