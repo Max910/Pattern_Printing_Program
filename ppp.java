@@ -604,7 +604,7 @@ public class ppp {
                         System.out.println("\npattern5");
                         System.out.println("\ta\n   a b\t\n  a b c\n a b c d\na b c d e");
                         System.out.println("\npattern6");
-                        System.out.println("        a  b  c  d  f  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\na  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n        a  b  c  d  e  a  b  c  d  e\n          a  b  c  d  e  a  b  c  d  e ");
+                        System.out.println("        a  b  c  d  e  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\na  b  c  d  e  a  b  c  d  e\n  a  b  c  d  e  a  b  c  d  e\n    a  b  c  d  e  a  b  c  d  e\n      a  b  c  d  e  a  b  c  d  e\n        a  b  c  d  e  a  b  c  d  e\n          a  b  c  d  e  a  b  c  d  e ");
                         System.out.println("Please Choose in between 1 to 6 from above: ");
                         Pattern_choice = S.nextInt();
                         if (Pattern_choice > 6) {
